@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hnievat.controlluces">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name="com.hnievat.controlluces.historyActivity"
+            android:label="@string/action_history"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.hnievat.controlluces.statsActivity" />
+        <activity
+            android:name="com.hnievat.controlluces.statsActivity"
+            android:label="@string/action_stats"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.hnievat.controlluces.ledControl" />
+        <activity
+            android:name="com.hnievat.controlluces.ui.login.LoginActivity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hnievat.controlluces.DeviceList"
+            android:label="@string/title_activity_devicelist"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.hnievat.controlluces.ledControl">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hnievat.controlluces.ledControl" />
+        </activity>
+        <activity
+            android:name="com.hnievat.controlluces.ledControl"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hnievat.controlluces.SettingsActivity"
+            android:label="@string/action_settings"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.hnievat.controlluces.ledControl">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hnievat.controlluces.ledControl" />
+        </activity>
+        <activity android:name="com.hnievat.controlluces.AboutActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+    </application>
+
+</manifest>

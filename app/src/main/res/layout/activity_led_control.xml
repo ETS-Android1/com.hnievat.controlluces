@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ledControl"
+    android:theme="@style/Theme.MaterialComponents.Light.Bridge">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight"
+            app:titleTextColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/sensorBar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="231dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="60dp"
+            android:max="1023"
+            android:min="0"
+            android:progress="440"
+            android:progressDrawable="@drawable/circle"
+            android:rotation="90"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="204dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:text="@string/sensor_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="62dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/light_level_placeholder"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch2"
+            android:layout_width="53dp"
+            android:layout_height="232dp"
+            app:layout_constraintBottom_toBottomOf="@+id/sensorBar"
+            app:layout_constraintEnd_toEndOf="@+id/sensorBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/sensorBar"
+            app:layout_constraintTop_toTopOf="@+id/sensorBar"
+            app:layout_constraintVertical_bias="0.439" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

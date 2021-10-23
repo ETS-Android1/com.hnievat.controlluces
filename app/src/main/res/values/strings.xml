@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Controlador de Luces</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo electrónico</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar sesión o registrarse</string>
+    <string name="action_sign_in_short">Iniciar sesión</string>
+    <string name="welcome">"Bienvenido! "</string>
+    <string name="invalid_username">Nombre de usuario invalido</string>
+    <string name="invalid_password">Contraseña debe tener >5 caracteres</string>
+    <string name="login_failed">Inicio de sesión fallido</string>
+    <string name="title_activity_login">Controlador de Luces</string>
+    <string name="title_activity_devicelist">Lista de dispositivos</string>
+    <!-- Menu -->
+    <string name="action_settings">Configuración</string>
+    <string name="cerrar_sesi_n">Cerrar Sesión</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="device_address"></string>
+    <string name="action_stats">Estadísticas</string>
+    <string name="action_history">Historial</string>
+    <string name="add_word">Add Word</string>
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="history">Historial</string>
+    <string name="about_app_title">Controlador de Luces</string>
+    <string name="about_app_version">v1.0</string>
+    <string name="about_app_author">por Humberto Nieva Treviño</string>
+    <string name="about_see_licenses">Ver licencias</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="email">Email</string>
+    <string name="connected">Conectado</string>
+    <string name="light_off_by_sensor">Luz apagada por sensor</string>
+    <string name="about">Acerca de</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="search_devices">Buscar Dispositivos</string>
+    <string name="sensor_light">Luz del sensor</string>
+    <string name="light_level_placeholder">440</string>
+    <string name="auto_on_off">Encendido y apagado automático</string>
+    <string name="on_off_light_levels">Niveles de luz para encendido y apagado</string>
+    <string name="turn_on_at">Encender en:</string>
+    <string name="turn_off_at">Apagar en:</string>
+    <string name="receive_levels_from_device">Recibir niveles de dispositivo</string>
+    <string name="save_levels_in_device">Guardar niveles en dispositivo</string>
+    <string name="usage_stats">Estadísticas de uso</string>
+    <string name="hours_on">Horas encendido:</string>
+    <string name="hours_on_placeholder">3 horas</string>
+    <string name="total_energy_usage">Consumo eléctrico total:</string>
+    <string name="total_energy_usage_placeholder">15 W/h</string>
+    <string name="total_cost">Costo total:</string>
+    <string name="total_cost_placeholder">$12.46</string>
+    <string name="user_variables">Variables del usuario</string>
+    <string name="device_watt_hours">Watts/hora del dispositivo:</string>
+    <string name="device_watt_hours_placeholder">5 W/h</string>
+    <string name="watt_hour_rate">Tarifa del Watt/hora:</string>
+    <string name="watt_hour_rate_placeholder">$0.831</string>
+    <string name="reset_history_and_usage">Restablecer historial y estadísticas</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="sign_in">Iniciar Sesión</string>
+    <string name="login_screen_app_title">Controlador de Luces</string>
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1087781732238",
+    "firebase_url": "https://controlluces-ed5a1.firebaseio.com",
+    "project_id": "controlluces-ed5a1",
+    "storage_bucket": "controlluces-ed5a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087781732238:android:40569b37f8a1989fa8eedf",
+        "android_client_info": {
+          "package_name": "com.hnievaeio.controlluces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087781732238-fts20ksfukrjjs9i1ft0f3fjpofoia7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD50wNGLsevKLLUeqpuPuoUcAZM4PxXqWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087781732238-fts20ksfukrjjs9i1ft0f3fjpofoia7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

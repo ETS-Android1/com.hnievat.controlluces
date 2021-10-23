@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight"
+            app:titleTextColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="271dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="36dp"
+            android:enabled="true"
+            android:text="@string/log_out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="344dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <TextView
+            android:id="@+id/estatusTextView3"
+            android:layout_width="89dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/connected"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/logOutButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/estatusTextView"
+            android:layout_width="195dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="72dp"
+            android:text="@string/light_off_by_sensor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/logOutButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/sensorBar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="231dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="32dp"
+            android:progress="75"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar2"
+            android:progressDrawable="@drawable/circle" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="53dp"
+            android:layout_height="232dp"
+            app:layout_constraintBottom_toBottomOf="@+id/sensorBar"
+            app:layout_constraintEnd_toEndOf="@+id/sensorBar"
+            app:layout_constraintStart_toStartOf="@+id/sensorBar"
+            app:layout_constraintTop_toTopOf="@+id/sensorBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
